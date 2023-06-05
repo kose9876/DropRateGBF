@@ -12,12 +12,12 @@ class Frame2(tk.Frame):
         self.hourglass_count = tk.IntVar()
 
         # 老7圖片
-        self.boss_img = tk.PhotoImage(file='seofon.png')
+        self.boss_img = tk.PhotoImage(file='./picture/seofon.png')
         boss_label = tk.Label(self, image=self.boss_img)
         boss_label.pack()
 
         # 葡萄1
-        grape_img = tk.PhotoImage(file='grape.png')
+        grape_img = tk.PhotoImage(file='./picture/grape.png')
         grape_label = tk.Label(self, image=grape_img)
         grape_label.pack()
         grape_count_label = tk.Label(self, textvariable=self.grape_count)
@@ -26,7 +26,7 @@ class Frame2(tk.Frame):
         grape_button.pack()
 
         # 葡萄2 grapedu
-        grapedu_img = tk.PhotoImage(file='grapedu.png')
+        grapedu_img = tk.PhotoImage(file='./picture/grapedu.png')
         grapedu_label = tk.Label(self, image=grapedu_img)
         grapedu_label.pack()
         grapedu_count_label = tk.Label(self, textvariable=self.grapedu_count)
@@ -35,7 +35,7 @@ class Frame2(tk.Frame):
         grapedu_button.pack()
 
         # 葡萄3 grapetr
-        grapetr_img = tk.PhotoImage(file='grapetr.png')
+        grapetr_img = tk.PhotoImage(file='./picture/grapetr.png')
         grapetr_label = tk.Label(self, image=grapetr_img)
         grapetr_label.pack()
         grapetr_count_label = tk.Label(self, textvariable=self.grapetr_count)
@@ -43,8 +43,8 @@ class Frame2(tk.Frame):
         grapetr_button = tk.Button(self, text="+1", command=lambda: self.increase_count(self.grapetr_count))
         grapetr_button.pack()
 
-        # 水晶刀
-        sbsword_img = tk.PhotoImage(file='sbsword.png')
+        # 七劍
+        sbsword_img = tk.PhotoImage(file='./picture/sbsword.png')
         sbsword_label = tk.Label(self, image=sbsword_img)
         sbsword_label.pack()
         sbsword_count_label = tk.Label(self, textvariable=self.sbsword_count)
@@ -53,7 +53,7 @@ class Frame2(tk.Frame):
         sbsword_button.pack()
 
         # 沙漏
-        hourglass_img = tk.PhotoImage(file='hourglassresize.png')
+        hourglass_img = tk.PhotoImage(file='./picture/hourglassresize.png')
         hourglass_label = tk.Label(self, image=hourglass_img)
         hourglass_label.pack()
         hourglass_count_label = tk.Label(self, textvariable=self.hourglass_count)

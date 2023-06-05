@@ -12,12 +12,12 @@ class Frame1(tk.Frame):
         self.hourglass_count = tk.IntVar()
 
         # 機神圖片
-        self.boss_img = tk.PhotoImage(file='diasppora.png')
+        self.boss_img = tk.PhotoImage(file='./picture/diasppora.png')
         boss_label = tk.Label(self, image=self.boss_img)
         boss_label.pack()
 
         # 水晶芯片
-        waterchip_img = tk.PhotoImage(file='waterchipresize.png')
+        waterchip_img = tk.PhotoImage(file='./picture/waterchipresize.png')
         waterchip_label = tk.Label(self, image=waterchip_img)
         waterchip_label.pack()
         waterchip_count_label = tk.Label(self, textvariable=self.waterchip_count)
@@ -25,8 +25,8 @@ class Frame1(tk.Frame):
         waterchip_button = tk.Button(self, text="+1", command=lambda: self.increase_count(self.waterchip_count))
         waterchip_button.pack()
 
-        # 水晶芯片DU
-        waterchipdu_img = tk.PhotoImage(file='waterchipduresize.png')
+        # 晶片X2
+        waterchipdu_img = tk.PhotoImage(file='./picture/waterchipduresize.png')
         waterchipdu_label = tk.Label(self, image=waterchipdu_img)
         waterchipdu_label.pack()
         waterchipdu_count_label = tk.Label(self, textvariable=self.waterchipdu_count)
@@ -34,8 +34,8 @@ class Frame1(tk.Frame):
         waterchipdu_button = tk.Button(self, text="+1", command=lambda: self.increase_count(self.waterchipdu_count))
         waterchipdu_button.pack()
 
-        # 水晶芯片TR
-        waterchiptr_img = tk.PhotoImage(file='waterchiptrresize.png')
+        # 晶片X3
+        waterchiptr_img = tk.PhotoImage(file='./picture/waterchiptrresize.png')
         waterchiptr_label = tk.Label(self, image=waterchiptr_img)
         waterchiptr_label.pack()
         waterchiptr_count_label = tk.Label(self, textvariable=self.waterchiptr_count)
@@ -43,8 +43,8 @@ class Frame1(tk.Frame):
         waterchiptr_button = tk.Button(self, text="+1", command=lambda: self.increase_count(self.waterchiptr_count))
         waterchiptr_button.pack()
 
-        # 水晶刀
-        waterknife_img = tk.PhotoImage(file='waterkniferesize.png')
+        # G神刀
+        waterknife_img = tk.PhotoImage(file='./picture/waterkniferesize.png')
         waterknife_label = tk.Label(self, image=waterknife_img)
         waterknife_label.pack()
         waterknife_count_label = tk.Label(self, textvariable=self.waterknife_count)
@@ -53,7 +53,7 @@ class Frame1(tk.Frame):
         waterknife_button.pack()
 
         # 沙漏
-        hourglass_img = tk.PhotoImage(file='hourglassresize.png')
+        hourglass_img = tk.PhotoImage(file='./picture/hourglassresize.png')
         hourglass_label = tk.Label(self, image=hourglass_img)
         hourglass_label.pack()
         hourglass_count_label = tk.Label(self, textvariable=self.hourglass_count)
