@@ -17,7 +17,7 @@ class Frame1(tk.Frame):
         boss_label.pack()
 
         # 水晶芯片
-        waterchip_img = tk.PhotoImage(file='./picture/waterchipresize.png')
+        waterchip_img = tk.PhotoImage(file='./picture/waterchip.png')
         waterchip_label = tk.Label(self, image=waterchip_img)
         waterchip_label.pack()
         waterchip_count_label = tk.Label(self, textvariable=self.waterchip_count)
@@ -26,7 +26,7 @@ class Frame1(tk.Frame):
         waterchip_button.pack()
 
         # 晶片X2
-        waterchipdu_img = tk.PhotoImage(file='./picture/waterchipduresize.png')
+        waterchipdu_img = tk.PhotoImage(file='./picture/waterchipdu.png')
         waterchipdu_label = tk.Label(self, image=waterchipdu_img)
         waterchipdu_label.pack()
         waterchipdu_count_label = tk.Label(self, textvariable=self.waterchipdu_count)
@@ -35,7 +35,7 @@ class Frame1(tk.Frame):
         waterchipdu_button.pack()
 
         # 晶片X3
-        waterchiptr_img = tk.PhotoImage(file='./picture/waterchiptrresize.png')
+        waterchiptr_img = tk.PhotoImage(file='./picture/waterchiptr.png')
         waterchiptr_label = tk.Label(self, image=waterchiptr_img)
         waterchiptr_label.pack()
         waterchiptr_count_label = tk.Label(self, textvariable=self.waterchiptr_count)
@@ -44,7 +44,7 @@ class Frame1(tk.Frame):
         waterchiptr_button.pack()
 
         # G神刀
-        waterknife_img = tk.PhotoImage(file='./picture/waterkniferesize.png')
+        waterknife_img = tk.PhotoImage(file='./picture/waterknife.png')
         waterknife_label = tk.Label(self, image=waterknife_img)
         waterknife_label.pack()
         waterknife_count_label = tk.Label(self, textvariable=self.waterknife_count)
@@ -53,7 +53,7 @@ class Frame1(tk.Frame):
         waterknife_button.pack()
 
         # 沙漏
-        hourglass_img = tk.PhotoImage(file='./picture/hourglassresize.png')
+        hourglass_img = tk.PhotoImage(file='./picture/hourglass.png')
         hourglass_label = tk.Label(self, image=hourglass_img)
         hourglass_label.pack()
         hourglass_count_label = tk.Label(self, textvariable=self.hourglass_count)
@@ -80,12 +80,12 @@ class Frame1(tk.Frame):
         self.drop_items = drop_items
 
         self.calculate_probability()
-        self.load_counts('counts.json')
+        self.load_counts('counts.txt')
 
     def increase_count(self, count_var):
         count_var.set(count_var.get() + 1)
         self.calculate_probability()
-        self.save_counts('counts.json')
+        self.save_counts('counts.txt')
 
     def calculate_probability(self):
         counts = [

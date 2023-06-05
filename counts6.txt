@@ -1,0 +1,1 @@
+{"dropitem1_count": 0, "dropitem2_count": 5, "dropitem3_count": 0}

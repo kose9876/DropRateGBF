@@ -53,7 +53,7 @@ class Frame2(tk.Frame):
         sbsword_button.pack()
 
         # 沙漏
-        hourglass_img = tk.PhotoImage(file='./picture/hourglassresize.png')
+        hourglass_img = tk.PhotoImage(file='./picture/hourglass.png')
         hourglass_label = tk.Label(self, image=hourglass_img)
         hourglass_label.pack()
         hourglass_count_label = tk.Label(self, textvariable=self.hourglass_count)
