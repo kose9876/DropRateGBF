@@ -3,7 +3,7 @@ import json
 
 class Frame1(tk.Frame):
     def __init__(self, parent):
-        super().__init__(parent, width=300, height=500, bd=10, relief='groove')
+        super().__init__(parent, width=300, height=500, bd=10, relief='ridge')
         self.parent = parent
         self.waterchip_count = tk.IntVar()
         self.waterchipdu_count = tk.IntVar()

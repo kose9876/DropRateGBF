@@ -10,6 +10,7 @@ window = tk.Tk()
 window.title('機神系列沙漏武器掉落率統計機')
 window.geometry('1000x730')
 window.resizable(False, False)
+window.iconbitmap('./picture/gold.ico')
 
 frame1 = Frame1(window)
 frame1.grid(row=0,column=1)

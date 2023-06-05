@@ -3,7 +3,7 @@ import json
 
 class Frame3(tk.Frame):
     def __init__(self, parent):
-        super().__init__(parent, width=256, height=500, bd=10, relief='sunken')
+        super().__init__(parent, width=256, height=500, bd=10, relief='ridge')
         self.parent = parent
         self.dropitem1_count = tk.IntVar()
         self.dropitem2_count = tk.IntVar()
