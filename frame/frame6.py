@@ -35,7 +35,7 @@ class Frame6(tk.Frame):
         dropitem2_button.pack()
 
         # 物品3
-        dropitem3_img = tk.PhotoImage(file='./picture/nexttime.png')
+        dropitem3_img = tk.PhotoImage(file='./picture/Damascus_Grain.png')
         dropitem3_label = tk.Label(self, image=dropitem3_img)
         dropitem3_label.pack()
         dropitem3_count_label = tk.Label(self, textvariable=self.dropitem3_count)
@@ -88,7 +88,7 @@ class Frame6(tk.Frame):
         counts = [
             self.dropitem1_count.get(),
             self.dropitem2_count.get(),
-            #self.dropitem3_count.get(),
+            self.dropitem3_count.get(),
             #self.dropitem4_count.get(),
             #self.dropitem5_count.get()
         ]
